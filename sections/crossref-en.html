@@ -1,0 +1,678 @@
+<h2 id="crossreference" class="list">Cross-reference for mifesto vocabulary classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by mifesto vocabulary.
+<div xmlns:widoco="https://w3id.org/widoco/vocab#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     id="classes">
+   <h3 id="classes-headline" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#code" title="https://w3id.org/mifesto#code">
+            <span>code</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Component" title="https://w3id.org/mifesto#Component">Component</a>
+      </li>
+      <li>
+         <a href="#Configuration" title="https://w3id.org/mifesto#Configuration">Configuration</a>
+      </li>
+      <li>
+         <a href="#Dimension" title="https://w3id.org/mifesto#Dimension">Dimension</a>
+      </li>
+      <li>
+         <a href="#DimensionSetting" title="https://w3id.org/mifesto#DimensionSetting">Dimension Setting</a>
+      </li>
+      <li>
+         <a href="#GridDimension" title="https://w3id.org/mifesto#GridDimension">Grid Dimension</a>
+      </li>
+      <li>
+         <a href="#GridDimensionSetting" title="https://w3id.org/mifesto#GridDimensionSetting">Grid Dimension Setting</a>
+      </li>
+      <li>
+         <a href="#IdentifierDefinition" title="https://w3id.org/mifesto#IdentifierDefinition">Identifier Definition</a>
+      </li>
+      <li>
+         <a href="#Manifest" title="https://w3id.org/mifesto#Manifest">Manifest</a>
+      </li>
+      <li>
+         <a href="#OrganisationalComponent" title="https://w3id.org/mifesto#OrganisationalComponent">Organisational Component</a>
+      </li>
+      <li>
+         <a href="#Page" title="https://w3id.org/mifesto#Page">Page</a>
+      </li>
+      <li>
+         <a href="#Store" title="https://w3id.org/mifesto#Store">Store</a>
+      </li>
+   </ul>
+   <div class="entity" id="code">
+      <h3>code<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mifesto#code</p>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://www.w3.org/ns/dcat#accessURL"
+               target="_blank"
+               title="http://www.w3.org/ns/dcat#accessURL">access u r l</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is also defined as</dt>
+         <dd>
+            <a href="#code">object property</a>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Component">
+      <h3>Component<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mifesto#Component</p>
+      <div class="comment">
+         <span class="markdown">A Component indicates that something is to be loaded in the interface of a particular configuration.</span>
+      </div>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#OrganisationalComponent" title="https://w3id.org/mifesto#OrganisationalComponent">Organisational Component</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasDimensionSetting" title="https://w3id.org/mifesto#hasDimensionSetting">has dimension setting</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasModule" title="https://w3id.org/mifesto#hasModule">has module</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hosts" title="https://w3id.org/mifesto#hosts">hosts</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Configuration">
+      <h3>Configuration<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mifesto#Configuration</p>
+      <div class="comment">
+         <span class="markdown">A Configuration is a semantic description of a GUI consisting of federated micro frontend modules.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://www.w3.org/ns/dcat#Catalog"
+               target="_blank"
+               title="http://www.w3.org/ns/dcat#Catalog">catalog</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Dimension">
+      <h3>Dimension<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mifesto#Dimension</p>
+      <div class="comment">
+         <span class="markdown">A Dimension contains a semantic description of the dimensions of an module.</span>
+      </div>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#GridDimension" title="https://w3id.org/mifesto#GridDimension">Grid Dimension</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasDimension" title="https://w3id.org/mifesto#hasDimension">has dimension</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="DimensionSetting">
+      <h3>Dimension Setting<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mifesto#DimensionSetting</p>
+      <div class="comment">
+         <span class="markdown">Class indicating that a resource is a dimension setting in the interface</span>
+      </div>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#GridDimensionSetting" title="https://w3id.org/mifesto#GridDimensionSetting">Grid Dimension Setting</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasDimensionSetting" title="https://w3id.org/mifesto#hasDimensionSetting">has dimension setting</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="GridDimension">
+      <h3>Grid Dimension<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mifesto#GridDimension</p>
+      <div class="comment">
+         <span class="markdown">A Grid Dimension contains a semantic description of the dimensions of an module, as a grid definition with rows and columns.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Dimension" title="https://w3id.org/mifesto#Dimension">Dimension</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#initialColumns" title="https://w3id.org/mifesto#initialColumns">initial columns</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#initialRows" title="https://w3id.org/mifesto#initialRows">initial rows</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="GridDimensionSetting">
+      <h3>Grid Dimension Setting<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mifesto#GridDimensionSetting</p>
+      <div class="comment">
+         <span class="markdown">Class indicating that a resource is a grid dimension setting, i.e. there must be a row-column layout for this Component or Page </span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#DimensionSetting" title="https://w3id.org/mifesto#DimensionSetting">Dimension Setting</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="IdentifierDefinition">
+      <h3>Identifier Definition<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mifesto#IdentifierDefinition</p>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#compatibleMedia" title="https://w3id.org/mifesto#compatibleMedia">compatible media</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#writesIdentifier" title="https://w3id.org/mifesto#writesIdentifier">writes identifier</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Manifest">
+      <h3>Manifest<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mifesto#Manifest</p>
+      <div class="comment">
+         <span class="markdown">A Manifest is the semantic description of a micro frontend module.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://www.w3.org/ns/dcat#Dataset"
+               target="_blank"
+               title="http://www.w3.org/ns/dcat#Dataset">dataset</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasModule" title="https://w3id.org/mifesto#hasModule">has module</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="OrganisationalComponent">
+      <h3>Organisational Component<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mifesto#OrganisationalComponent</p>
+      <div class="comment">
+         <span class="markdown">Class indicating that a resource is an organisational component, i.e it does not have any content of its own, but requires child components</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Component" title="https://w3id.org/mifesto#Component">Component</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hosts" title="https://w3id.org/mifesto#hosts">hosts</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Page">
+      <h3>Page<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mifesto#Page</p>
+      <div class="comment">
+         <span class="markdown">Class indicating that something is to be a separate page in the interface of a particular configuration.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://www.w3.org/ns/dcat#Catalog"
+               target="_blank"
+               title="http://www.w3.org/ns/dcat#Catalog">catalog</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasRoute" title="https://w3id.org/mifesto#hasRoute">has route</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Store">
+      <h3>Store<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mifesto#Store</p>
+      <div class="comment">
+         <span class="markdown">A store is a dereferenceable, federated catalog pointing to other stores, configurations and manifests of Mifesto modules.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="http://www.w3.org/ns/dcat#Catalog"
+               target="_blank"
+               title="http://www.w3.org/ns/dcat#Catalog">catalog</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#code" title="https://w3id.org/mifesto#code">
+            <span>code</span>
+         </a>
+      </li>
+      <li>
+         <a href="#compatibleMedia" title="https://w3id.org/mifesto#compatibleMedia">compatible media</a>
+      </li>
+      <li>
+         <a href="#hasDimension" title="https://w3id.org/mifesto#hasDimension">has dimension</a>
+      </li>
+      <li>
+         <a href="#hasDimensionSetting" title="https://w3id.org/mifesto#hasDimensionSetting">has dimension setting</a>
+      </li>
+      <li>
+         <a href="#hasModule" title="https://w3id.org/mifesto#hasModule">has module</a>
+      </li>
+      <li>
+         <a href="#hosts" title="https://w3id.org/mifesto#hosts">hosts</a>
+      </li>
+      <li>
+         <a href="#readsIdentifier" title="https://w3id.org/mifesto#readsIdentifier">reads identifier</a>
+      </li>
+      <li>
+         <a href="#usesVocabulary" title="https://w3id.org/mifesto#usesVocabulary">uses vocabulary</a>
+      </li>
+      <li>
+         <a href="#writesIdentifier" title="https://w3id.org/mifesto#writesIdentifier">writes identifier</a>
+      </li>
+   </ul>
+   <div class="entity" id="code">
+      <h3>code<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mifesto#code</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://www.w3.org/ns/dcat#Distribution"
+                  target="_blank"
+                  title="http://www.w3.org/ns/dcat#Distribution">distribution</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>
+               <a href="#code">class</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="compatibleMedia">
+      <h3>compatible media<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mifesto#compatibleMedia</p>
+      <div class="comment">
+         <span class="markdown">The media type that the module can handle.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://www.w3.org/ns/dcat#Distribution"
+                  target="_blank"
+                  title="http://www.w3.org/ns/dcat#Distribution">distribution</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#IdentifierDefinition" title="https://w3id.org/mifesto#IdentifierDefinition">Identifier Definition</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasDimension">
+      <h3>has dimension<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mifesto#hasDimension</p>
+      <div class="comment">
+         <span class="markdown">The dimension that is used for a module hosted by a Page.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Dimension" title="https://w3id.org/mifesto#Dimension">Dimension</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#DatatypeProperty"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#DatatypeProperty">datatype property</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasDimensionSetting">
+      <h3>has dimension setting<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mifesto#hasDimensionSetting</p>
+      <div class="comment">
+         <span class="markdown">The dimension setting that is used for a Page.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Component" title="https://w3id.org/mifesto#Component">Component</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#DimensionSetting" title="https://w3id.org/mifesto#DimensionSetting">Dimension Setting</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasModule">
+      <h3>has module<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mifesto#hasModule</p>
+      <div class="comment">
+         <span class="markdown">The module that is used in the interface.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Component" title="https://w3id.org/mifesto#Component">Component</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Manifest" title="https://w3id.org/mifesto#Manifest">Manifest</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hosts">
+      <h3>hosts<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mifesto#hosts</p>
+      <div class="comment">
+         <span class="markdown">The module that is used in the interface.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#OrganisationalComponent" title="https://w3id.org/mifesto#OrganisationalComponent">Organisational Component</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Component" title="https://w3id.org/mifesto#Component">Component</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="readsIdentifier">
+      <h3>reads identifier<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mifesto#readsIdentifier</p>
+      <div class="comment">
+         <span class="markdown">What kind of identifier the module can interpret.</span>
+      </div>
+   </div>
+   <div class="entity" id="usesVocabulary">
+      <h3>uses vocabulary<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mifesto#usesVocabulary</p>
+      <div class="comment">
+         <span class="markdown">The vocabulary that the module uses for semantic enrichment.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://www.w3.org/ns/dcat#Distribution"
+                  target="_blank"
+                  title="http://www.w3.org/ns/dcat#Distribution">distribution</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#Ontology"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#Ontology">ontology</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="writesIdentifier">
+      <h3>writes identifier<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mifesto#writesIdentifier</p>
+      <div class="comment">
+         <span class="markdown">What kind of identifier the module can write.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="http://www.w3.org/ns/dcat#Distribution"
+                  target="_blank"
+                  title="http://www.w3.org/ns/dcat#Distribution">distribution</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#IdentifierDefinition" title="https://w3id.org/mifesto#IdentifierDefinition">Identifier Definition</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     id="dataproperties">
+   <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#hasRoute" title="https://w3id.org/mifesto#hasRoute">has route</a>
+      </li>
+      <li>
+         <a href="#hasSPARQL" title="https://w3id.org/mifesto#hasSPARQL">has SPARQL</a>
+      </li>
+      <li>
+         <a href="#initialColumns" title="https://w3id.org/mifesto#initialColumns">initial columns</a>
+      </li>
+      <li>
+         <a href="#initialRows" title="https://w3id.org/mifesto#initialRows">initial rows</a>
+      </li>
+      <li>
+         <a href="#isActive" title="https://w3id.org/mifesto#isActive">is active</a>
+      </li>
+   </ul>
+   <div class="entity" id="hasRoute">
+      <h3>has route<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mifesto#hasRoute</p>
+      <div class="comment">
+         <span class="markdown">The route resolving to a mifesto:Page instance.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Page" title="https://w3id.org/mifesto#Page">Page</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasSPARQL">
+      <h3>has SPARQL<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mifesto#hasSPARQL</p>
+      <div class="comment">
+         <span class="markdown">Links a Shell variable to a SPARQL query that is used to retrieve the data from the local RDF store.</span>
+      </div>
+   </div>
+   <div class="entity" id="initialColumns">
+      <h3>initial columns<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mifesto#initialColumns</p>
+      <div class="comment">
+         <span class="markdown">The initial number of columns for a grid dimension.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#GridDimension" title="https://w3id.org/mifesto#GridDimension">Grid Dimension</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="initialRows">
+      <h3>initial rows<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mifesto#initialRows</p>
+      <div class="comment">
+         <span class="markdown">The initial number of rows for a grid dimension.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#GridDimension" title="https://w3id.org/mifesto#GridDimension">Grid Dimension</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isActive">
+      <h3>is active<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/mifesto#isActive</p>
+      <div class="comment">
+         <span class="markdown">Indicates whether a resource is currently activated in the interface or not.</span>
+      </div>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+</div>
+</div>

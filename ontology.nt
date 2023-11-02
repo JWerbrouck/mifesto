@@ -1,0 +1,242 @@
+<https://w3id.org/mifesto#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/mifesto#> <http://www.w3.org/2002/07/owl#versionIRI> <urn:absolute:0.0.1> .
+<https://w3id.org/mifesto#> <http://purl.org/dc/terms/contributor> "Erik Mannens" .
+<https://w3id.org/mifesto#> <http://purl.org/dc/terms/contributor> "Jakob Beetz" .
+<https://w3id.org/mifesto#> <http://purl.org/dc/terms/contributor> "Pieter Pauwels" .
+<https://w3id.org/mifesto#> <http://purl.org/dc/terms/creator> "Jeroen Werbrouck" .
+<https://w3id.org/mifesto#> <http://purl.org/dc/terms/issued> "2023-09-29T12:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://w3id.org/mifesto#> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/1.0/> .
+<https://w3id.org/mifesto#> <http://purl.org/dc/terms/title> "mifesto vocabulary" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/mifesto#code
+<https://w3id.org/mifesto#code> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/mifesto#code> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/dcat#Distribution> .
+<http://www.w3.org/ns/dcat#Distribution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/mifesto#compatibleMedia
+<https://w3id.org/mifesto#compatibleMedia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/mifesto#compatibleMedia> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/dcat#Distribution> .
+<https://w3id.org/mifesto#compatibleMedia> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/mifesto#IdentifierDefinition> .
+<https://w3id.org/mifesto#compatibleMedia> <http://www.w3.org/2000/01/rdf-schema#comment> "The media type that the module can handle." .
+<https://w3id.org/mifesto#compatibleMedia> <http://www.w3.org/2000/01/rdf-schema#label> "compatible media" .
+# 
+# https://w3id.org/mifesto#hasDimension
+<https://w3id.org/mifesto#hasDimension> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/mifesto#hasDimension> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/mifesto#Dimension> .
+<https://w3id.org/mifesto#hasDimension> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/2002/07/owl#DatatypeProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/mifesto#hasDimension> <http://www.w3.org/2000/01/rdf-schema#comment> "The dimension that is used for a module hosted by a Page." .
+<https://w3id.org/mifesto#hasDimension> <http://www.w3.org/2000/01/rdf-schema#label> "has dimension" .
+# 
+# https://w3id.org/mifesto#hasDimensionSetting
+<https://w3id.org/mifesto#hasDimensionSetting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/mifesto#hasDimensionSetting> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/mifesto#Component> .
+<https://w3id.org/mifesto#hasDimensionSetting> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/mifesto#DimensionSetting> .
+<https://w3id.org/mifesto#hasDimensionSetting> <http://www.w3.org/2000/01/rdf-schema#comment> "The dimension setting that is used for a Page." .
+<https://w3id.org/mifesto#hasDimensionSetting> <http://www.w3.org/2000/01/rdf-schema#label> "has dimension setting" .
+# 
+# https://w3id.org/mifesto#hasModule
+<https://w3id.org/mifesto#hasModule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/mifesto#hasModule> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/mifesto#Component> .
+<https://w3id.org/mifesto#hasModule> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/mifesto#Manifest> .
+<https://w3id.org/mifesto#hasModule> <http://www.w3.org/2000/01/rdf-schema#comment> "The module that is used in the interface." .
+<https://w3id.org/mifesto#hasModule> <http://www.w3.org/2000/01/rdf-schema#label> "has module" .
+# 
+# https://w3id.org/mifesto#hosts
+<https://w3id.org/mifesto#hosts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/mifesto#hosts> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/mifesto#OrganisationalComponent> .
+<https://w3id.org/mifesto#hosts> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/mifesto#Component> .
+<https://w3id.org/mifesto#hosts> <http://www.w3.org/2000/01/rdf-schema#comment> "The module that is used in the interface." .
+<https://w3id.org/mifesto#hosts> <http://www.w3.org/2000/01/rdf-schema#label> "hosts" .
+# 
+# https://w3id.org/mifesto#readsIdentifier
+<https://w3id.org/mifesto#readsIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/mifesto#readsIdentifier> <http://www.w3.org/2000/01/rdf-schema#comment> "What kind of identifier the module can interpret." .
+<https://w3id.org/mifesto#readsIdentifier> <http://www.w3.org/2000/01/rdf-schema#label> "reads identifier" .
+# 
+# https://w3id.org/mifesto#usesVocabulary
+<https://w3id.org/mifesto#usesVocabulary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/mifesto#usesVocabulary> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/dcat#Distribution> .
+<https://w3id.org/mifesto#usesVocabulary> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.w3.org/2002/07/owl#Ontology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/mifesto#usesVocabulary> <http://www.w3.org/2000/01/rdf-schema#comment> "The vocabulary that the module uses for semantic enrichment." .
+<https://w3id.org/mifesto#usesVocabulary> <http://www.w3.org/2000/01/rdf-schema#label> "uses vocabulary" .
+# 
+# https://w3id.org/mifesto#writesIdentifier
+<https://w3id.org/mifesto#writesIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/mifesto#writesIdentifier> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/dcat#Distribution> .
+<https://w3id.org/mifesto#writesIdentifier> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/mifesto#IdentifierDefinition> .
+<https://w3id.org/mifesto#writesIdentifier> <http://www.w3.org/2000/01/rdf-schema#comment> "What kind of identifier the module can write." .
+<https://w3id.org/mifesto#writesIdentifier> <http://www.w3.org/2000/01/rdf-schema#label> "writes identifier" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/mifesto#hasRoute
+<https://w3id.org/mifesto#hasRoute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/mifesto#hasRoute> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/mifesto#Page> .
+<https://w3id.org/mifesto#hasRoute> <http://www.w3.org/2000/01/rdf-schema#comment> "The route resolving to a mifesto:Page instance." .
+<https://w3id.org/mifesto#hasRoute> <http://www.w3.org/2000/01/rdf-schema#label> "has route" .
+# 
+# https://w3id.org/mifesto#hasSPARQL
+<https://w3id.org/mifesto#hasSPARQL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/mifesto#hasSPARQL> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a Shell variable to a SPARQL query that is used to retrieve the data from the local RDF store." .
+<https://w3id.org/mifesto#hasSPARQL> <http://www.w3.org/2000/01/rdf-schema#label> "has SPARQL" .
+# 
+# https://w3id.org/mifesto#initialColumns
+<https://w3id.org/mifesto#initialColumns> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/mifesto#initialColumns> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/mifesto#GridDimension> .
+<https://w3id.org/mifesto#initialColumns> <http://www.w3.org/2000/01/rdf-schema#comment> "The initial number of columns for a grid dimension." .
+<https://w3id.org/mifesto#initialColumns> <http://www.w3.org/2000/01/rdf-schema#label> "initial columns" .
+# 
+# https://w3id.org/mifesto#initialRows
+<https://w3id.org/mifesto#initialRows> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/mifesto#initialRows> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/mifesto#GridDimension> .
+<https://w3id.org/mifesto#initialRows> <http://www.w3.org/2000/01/rdf-schema#comment> "The initial number of rows for a grid dimension." .
+<https://w3id.org/mifesto#initialRows> <http://www.w3.org/2000/01/rdf-schema#label> "initial rows" .
+# 
+# https://w3id.org/mifesto#isActive
+<https://w3id.org/mifesto#isActive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/mifesto#isActive> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates whether a resource is currently activated in the interface or not." .
+<https://w3id.org/mifesto#isActive> <http://www.w3.org/2000/01/rdf-schema#label> "is active" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2002/07/owl#DatatypeProperty
+# 
+# http://www.w3.org/2002/07/owl#Ontology
+# 
+# http://www.w3.org/ns/dcat#Catalog
+<http://www.w3.org/ns/dcat#Catalog> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/dcat#Dataset
+<http://www.w3.org/ns/dcat#Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/dcat#Distribution
+# 
+# http://www.w3.org/ns/dcat#accessURL
+<http://www.w3.org/ns/dcat#accessURL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/mifesto#Component
+<https://w3id.org/mifesto#Component> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/mifesto#Component> <http://www.w3.org/2000/01/rdf-schema#comment> "A Component indicates that something is to be loaded in the interface of a particular configuration." .
+<https://w3id.org/mifesto#Component> <http://www.w3.org/2000/01/rdf-schema#label> "Component" .
+# 
+# https://w3id.org/mifesto#Configuration
+<https://w3id.org/mifesto#Configuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/mifesto#Configuration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Catalog> .
+<https://w3id.org/mifesto#Configuration> <http://www.w3.org/2000/01/rdf-schema#comment> "A Configuration is a semantic description of a GUI consisting of federated micro frontend modules." .
+<https://w3id.org/mifesto#Configuration> <http://www.w3.org/2000/01/rdf-schema#label> "Configuration" .
+# 
+# https://w3id.org/mifesto#Dimension
+<https://w3id.org/mifesto#Dimension> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/mifesto#Dimension> <http://www.w3.org/2000/01/rdf-schema#comment> "A Dimension contains a semantic description of the dimensions of an module." .
+<https://w3id.org/mifesto#Dimension> <http://www.w3.org/2000/01/rdf-schema#label> "Dimension" .
+# 
+# https://w3id.org/mifesto#DimensionSetting
+<https://w3id.org/mifesto#DimensionSetting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/mifesto#DimensionSetting> <http://www.w3.org/2000/01/rdf-schema#comment> "Class indicating that a resource is a dimension setting in the interface" .
+<https://w3id.org/mifesto#DimensionSetting> <http://www.w3.org/2000/01/rdf-schema#label> "Dimension Setting" .
+# 
+# https://w3id.org/mifesto#GridDimension
+<https://w3id.org/mifesto#GridDimension> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/mifesto#GridDimension> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/mifesto#Dimension> .
+<https://w3id.org/mifesto#GridDimension> <http://www.w3.org/2000/01/rdf-schema#comment> "A Grid Dimension contains a semantic description of the dimensions of an module, as a grid definition with rows and columns." .
+<https://w3id.org/mifesto#GridDimension> <http://www.w3.org/2000/01/rdf-schema#label> "Grid Dimension" .
+# 
+# https://w3id.org/mifesto#GridDimensionSetting
+<https://w3id.org/mifesto#GridDimensionSetting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/mifesto#GridDimensionSetting> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/mifesto#DimensionSetting> .
+<https://w3id.org/mifesto#GridDimensionSetting> <http://www.w3.org/2000/01/rdf-schema#comment> "Class indicating that a resource is a grid dimension setting, i.e. there must be a row-column layout for this Component or Page " .
+<https://w3id.org/mifesto#GridDimensionSetting> <http://www.w3.org/2000/01/rdf-schema#label> "Grid Dimension Setting" .
+# 
+# https://w3id.org/mifesto#IdentifierDefinition
+<https://w3id.org/mifesto#IdentifierDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/mifesto#IdentifierDefinition> <http://www.w3.org/2000/01/rdf-schema#label> "Identifier Definition" .
+# 
+# https://w3id.org/mifesto#Manifest
+<https://w3id.org/mifesto#Manifest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/mifesto#Manifest> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Dataset> .
+<https://w3id.org/mifesto#Manifest> <http://www.w3.org/2000/01/rdf-schema#comment> "A Manifest is the semantic description of a micro frontend module." .
+<https://w3id.org/mifesto#Manifest> <http://www.w3.org/2000/01/rdf-schema#label> "Manifest" .
+# 
+# https://w3id.org/mifesto#OrganisationalComponent
+<https://w3id.org/mifesto#OrganisationalComponent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/mifesto#OrganisationalComponent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/mifesto#Component> .
+<https://w3id.org/mifesto#OrganisationalComponent> <http://www.w3.org/2000/01/rdf-schema#comment> "Class indicating that a resource is an organisational component, i.e it does not have any content of its own, but requires child components" .
+<https://w3id.org/mifesto#OrganisationalComponent> <http://www.w3.org/2000/01/rdf-schema#label> "Organisational Component" .
+# 
+# https://w3id.org/mifesto#Page
+<https://w3id.org/mifesto#Page> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/mifesto#Page> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Catalog> .
+<https://w3id.org/mifesto#Page> <http://www.w3.org/2000/01/rdf-schema#comment> "Class indicating that something is to be a separate page in the interface of a particular configuration." .
+<https://w3id.org/mifesto#Page> <http://www.w3.org/2000/01/rdf-schema#label> "Page" .
+# 
+# https://w3id.org/mifesto#Store
+<https://w3id.org/mifesto#Store> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/mifesto#Store> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Catalog> .
+<https://w3id.org/mifesto#Store> <http://www.w3.org/2000/01/rdf-schema#comment> "A store is a dereferenceable, federated catalog pointing to other stores, configurations and manifests of Mifesto modules." .
+<https://w3id.org/mifesto#Store> <http://www.w3.org/2000/01/rdf-schema#label> "Store" .
+# 
+# https://w3id.org/mifesto#code
+<https://w3id.org/mifesto#code> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/mifesto#code> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#accessURL> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<https://w3id.org/mifesto#code> <http://www.w3.org/2000/01/rdf-schema#comment> "The URL of the loadable code of a micro frontend module." .
+<https://w3id.org/mifesto#code> <http://www.w3.org/2000/01/rdf-schema#label> "code" .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

@@ -1,0 +1,667 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/mifesto", "http://www.w3.org/ns/dcat" ],
+    "title" : {
+      "undefined" : "mifesto vocabulary"
+    },
+    "iri" : "https://w3id.org/mifesto#",
+    "author" : [ "Jeroen Werbrouck" ],
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/1.0/",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Jeroen Werbrouck",
+        "type" : "label"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Jakob Beetz",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Erik Mannens",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Pieter Pauwels",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "mifesto vocabulary",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2023-09-29T12:00:00",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "5",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/mifesto#GridDimensionSetting",
+    "baseIri" : "https://w3id.org/mifesto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GridDimensionSetting",
+      "undefined" : "Grid Dimension Setting"
+    },
+    "comment" : {
+      "undefined" : "Class indicating that a resource is a grid dimension setting, i.e. there must be a row-column layout for this Component or Page "
+    },
+    "id" : "6",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "https://w3id.org/mifesto#Page",
+    "baseIri" : "https://w3id.org/mifesto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Page",
+      "undefined" : "Page"
+    },
+    "comment" : {
+      "undefined" : "Class indicating that something is to be a separate page in the interface of a particular configuration."
+    },
+    "id" : "8",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "10",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/ns/dcat#accessURL",
+    "baseIri" : "http://www.w3.org/ns/dcat",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "accessURL"
+    },
+    "subClasses" : [ "12" ],
+    "attributes" : [ "external" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "13",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "14",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/ns/dcat#Distribution",
+    "baseIri" : "http://www.w3.org/ns/dcat",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Distribution"
+    },
+    "attributes" : [ "external" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "15",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://w3id.org/mifesto#GridDimension",
+    "baseIri" : "https://w3id.org/mifesto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GridDimension",
+      "undefined" : "Grid Dimension"
+    },
+    "comment" : {
+      "undefined" : "A Grid Dimension contains a semantic description of the dimensions of an module, as a grid definition with rows and columns."
+    },
+    "id" : "18",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "https://w3id.org/mifesto#code",
+    "baseIri" : "https://w3id.org/mifesto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "code",
+      "undefined" : "code"
+    },
+    "comment" : {
+      "undefined" : "The URL of the loadable code of a micro frontend module."
+    },
+    "id" : "12",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "https://w3id.org/mifesto#DimensionSetting",
+    "baseIri" : "https://w3id.org/mifesto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DimensionSetting",
+      "undefined" : "Dimension Setting"
+    },
+    "subClasses" : [ "6" ],
+    "comment" : {
+      "undefined" : "Class indicating that a resource is a dimension setting in the interface"
+    },
+    "id" : "7"
+  }, {
+    "iri" : "https://w3id.org/mifesto#OrganisationalComponent",
+    "baseIri" : "https://w3id.org/mifesto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OrganisationalComponent",
+      "undefined" : "Organisational Component"
+    },
+    "comment" : {
+      "undefined" : "Class indicating that a resource is an organisational component, i.e it does not have any content of its own, but requires child components"
+    },
+    "id" : "24",
+    "superClasses" : [ "25" ]
+  }, {
+    "iri" : "https://w3id.org/mifesto#Store",
+    "baseIri" : "https://w3id.org/mifesto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Store",
+      "undefined" : "Store"
+    },
+    "comment" : {
+      "undefined" : "A store is a dereferenceable, federated catalog pointing to other stores, configurations and manifests of Mifesto modules."
+    },
+    "id" : "28",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "4",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "5",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Ontology",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Ontology"
+    },
+    "attributes" : [ "external" ],
+    "id" : "31"
+  }, {
+    "iri" : "https://w3id.org/mifesto#Manifest",
+    "baseIri" : "https://w3id.org/mifesto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Manifest",
+      "undefined" : "Manifest"
+    },
+    "comment" : {
+      "undefined" : "A Manifest is the semantic description of a micro frontend module."
+    },
+    "id" : "22",
+    "superClasses" : [ "23" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#DatatypeProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DatatypeProperty"
+    },
+    "attributes" : [ "external" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://www.w3.org/ns/dcat#Dataset",
+    "baseIri" : "http://www.w3.org/ns/dcat",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Dataset"
+    },
+    "subClasses" : [ "22" ],
+    "attributes" : [ "external" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://www.w3.org/ns/dcat#Catalog",
+    "baseIri" : "http://www.w3.org/ns/dcat",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Catalog"
+    },
+    "subClasses" : [ "28", "8", "36" ],
+    "attributes" : [ "external" ],
+    "id" : "9"
+  }, {
+    "iri" : "https://w3id.org/mifesto#Component",
+    "baseIri" : "https://w3id.org/mifesto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Component",
+      "undefined" : "Component"
+    },
+    "subClasses" : [ "24" ],
+    "comment" : {
+      "undefined" : "A Component indicates that something is to be loaded in the interface of a particular configuration."
+    },
+    "id" : "25"
+  }, {
+    "iri" : "https://w3id.org/mifesto#Dimension",
+    "baseIri" : "https://w3id.org/mifesto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Dimension",
+      "undefined" : "Dimension"
+    },
+    "subClasses" : [ "18" ],
+    "comment" : {
+      "undefined" : "A Dimension contains a semantic description of the dimensions of an module."
+    },
+    "id" : "19"
+  }, {
+    "iri" : "https://w3id.org/mifesto#IdentifierDefinition",
+    "baseIri" : "https://w3id.org/mifesto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IdentifierDefinition",
+      "undefined" : "Identifier Definition"
+    },
+    "id" : "2"
+  }, {
+    "iri" : "https://w3id.org/mifesto#Configuration",
+    "baseIri" : "https://w3id.org/mifesto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Configuration",
+      "undefined" : "Configuration"
+    },
+    "comment" : {
+      "undefined" : "A Configuration is a semantic description of a GUI consisting of federated micro frontend modules."
+    },
+    "id" : "36",
+    "superClasses" : [ "9" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "20",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "26",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "29",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "30",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "32",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "33",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "35",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "37",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "38",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "39",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "40",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://w3id.org/mifesto#compatibleMedia",
+    "baseIri" : "https://w3id.org/mifesto",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "compatibleMedia",
+      "undefined" : "compatible media"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The media type that the module can handle."
+    },
+    "attributes" : [ "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://w3id.org/mifesto#hasSPARQL",
+    "baseIri" : "https://w3id.org/mifesto",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "hasSPARQL",
+      "undefined" : "has SPARQL"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Links a Shell variable to a SPARQL query that is used to retrieve the data from the local RDF store."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "3"
+  }, {
+    "range" : "11",
+    "domain" : "12",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "16"
+  }, {
+    "range" : "7",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "17"
+  }, {
+    "iri" : "https://w3id.org/mifesto#initialColumns",
+    "baseIri" : "https://w3id.org/mifesto",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "initialColumns",
+      "undefined" : "initial columns"
+    },
+    "domain" : "18",
+    "comment" : {
+      "undefined" : "The initial number of columns for a grid dimension."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "20"
+  }, {
+    "range" : "23",
+    "domain" : "22",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "21"
+  }, {
+    "iri" : "https://w3id.org/mifesto#readsIdentifier",
+    "baseIri" : "https://w3id.org/mifesto",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "readsIdentifier",
+      "undefined" : "reads identifier"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "What kind of identifier the module can interpret."
+    },
+    "attributes" : [ "object" ],
+    "id" : "26"
+  }, {
+    "range" : "9",
+    "domain" : "28",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "27"
+  }, {
+    "iri" : "https://w3id.org/mifesto#initialRows",
+    "baseIri" : "https://w3id.org/mifesto",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "initialRows",
+      "undefined" : "initial rows"
+    },
+    "domain" : "18",
+    "comment" : {
+      "undefined" : "The initial number of rows for a grid dimension."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "29"
+  }, {
+    "iri" : "https://w3id.org/mifesto#writesIdentifier",
+    "baseIri" : "https://w3id.org/mifesto",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "writesIdentifier",
+      "undefined" : "writes identifier"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "What kind of identifier the module can write."
+    },
+    "attributes" : [ "object" ],
+    "id" : "30"
+  }, {
+    "iri" : "https://w3id.org/mifesto#hasModule",
+    "baseIri" : "https://w3id.org/mifesto",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "hasModule",
+      "undefined" : "has module"
+    },
+    "domain" : "25",
+    "comment" : {
+      "undefined" : "The module that is used in the interface."
+    },
+    "attributes" : [ "object" ],
+    "id" : "32"
+  }, {
+    "iri" : "https://w3id.org/mifesto#hasDimension",
+    "baseIri" : "https://w3id.org/mifesto",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "hasDimension",
+      "undefined" : "has dimension"
+    },
+    "domain" : "19",
+    "comment" : {
+      "undefined" : "The dimension that is used for a module hosted by a Page."
+    },
+    "attributes" : [ "object" ],
+    "id" : "33"
+  }, {
+    "iri" : "https://w3id.org/mifesto#hasRoute",
+    "baseIri" : "https://w3id.org/mifesto",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "hasRoute",
+      "undefined" : "has route"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "The route resolving to a mifesto:Page instance."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "35"
+  }, {
+    "iri" : "https://w3id.org/mifesto#hosts",
+    "baseIri" : "https://w3id.org/mifesto",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "hosts",
+      "undefined" : "hosts"
+    },
+    "domain" : "24",
+    "comment" : {
+      "undefined" : "The module that is used in the interface."
+    },
+    "attributes" : [ "object" ],
+    "id" : "37"
+  }, {
+    "iri" : "https://w3id.org/mifesto#usesVocabulary",
+    "baseIri" : "https://w3id.org/mifesto",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "usesVocabulary",
+      "undefined" : "uses vocabulary"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "The vocabulary that the module uses for semantic enrichment."
+    },
+    "attributes" : [ "object" ],
+    "id" : "38"
+  }, {
+    "iri" : "https://w3id.org/mifesto#hasDimensionSetting",
+    "baseIri" : "https://w3id.org/mifesto",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasDimensionSetting",
+      "undefined" : "has dimension setting"
+    },
+    "domain" : "25",
+    "comment" : {
+      "undefined" : "The dimension setting that is used for a Page."
+    },
+    "attributes" : [ "object" ],
+    "id" : "39"
+  }, {
+    "iri" : "https://w3id.org/mifesto#isActive",
+    "baseIri" : "https://w3id.org/mifesto",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "isActive",
+      "undefined" : "is active"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Indicates whether a resource is currently activated in the interface or not."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "40"
+  }, {
+    "range" : "19",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "41"
+  }, {
+    "range" : "9",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "42"
+  }, {
+    "range" : "25",
+    "domain" : "24",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "43"
+  }, {
+    "range" : "9",
+    "domain" : "36",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "44"
+  } ]
+}
